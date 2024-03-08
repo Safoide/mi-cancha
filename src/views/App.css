@@ -1,0 +1,864 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-primary{
+  background-color: transparent !important;
+  z-index: 999;
+}
+
+#nav-link {
+  color: #000 !important;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+
+  display: flex !important;
+}
+.navAll {
+  background-color: #008000;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+
+
+
+
+.busquedaRapida {
+  width: 90%;
+  height: 120px;
+  color: #fff;
+  text-align: start;
+  position: absolute; 
+  margin-top: 40%; 
+  margin-left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
+
+.busquedaRapida form {
+  margin-left: 20%;
+  margin-top: -7%;
+  position: relative;
+}
+.busquedaRapida label{
+  color: #fff !important;
+}
+
+.busquedaRapida h1 {
+  width: 15%;
+  margin-top: 45px;
+  font-size: 1.5rem;
+  margin-left: 12px;
+}
+
+
+
+
+#listado {
+  margin-left: 8%;
+}
+
+#chats {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: flex-start;
+  }
+  
+  #remitentes-list a{
+      color: black !important;
+  }
+  
+  #registrarse{
+    color: black !important;
+  }
+  
+  #hora{
+    font-size: 10px;
+  }
+  
+  #soporteChat{
+    border-top: 2px solid #000b76;
+    border-right: 2px solid #000b76;
+    border-bottom: 2px solid #000b76;
+    background-color: #000b76;
+    color: white;
+    border-radius:  0px 10px 10px 0px;
+  }
+  #soporteForm{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    color: black;
+    border-radius:  10px 0px 0px 10px;
+    
+  }
+  #soporteForm textarea{
+    resize: none !important;
+  }
+  
+  .chat-container {
+    min-height: 400px;
+    max-height: 400px; /* Cambia esto según tus fferencias */
+    overflow-y: scroll;
+    border: 1px solid #ccc; /* Añade un borde opcional */
+    padding: 10px;
+  }
+  
+  .admin-message p{
+    background-color: #3498db; /* Fondo azul para los mensajes del administrador */
+  }
+
+.btn{
+  background-color: #40a835;
+  color: white;
+  border-radius:  12px !important; 
+  transition: ease-in 0.2s;
+  font-size: 20px;
+}
+
+.btn:hover{
+  border: #40a835 1px solid;
+  color: #40a835;
+}
+
+#icono-futbol {
+  z-index: 99999999;
+}
+
+#icono-futbol:hover::before,
+#icono-futbol:hover::after {
+  width: 0%;
+}
+
+/* Estilos para los botones de disponibilidad horaria */
+.horario-button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.disponible {
+  background-color: green;
+  color: white;
+}
+
+.no-disponible {
+  background-color: red;
+  color: white;
+}
+
+.seleccionado {
+  background-color: gray;
+  color: white;
+}
+
+#bienvenida {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 30vw;
+  background-color: #179148;
+}
+
+h1 {
+  color: #fff;
+  margin-right: 10px;
+}
+
+#chat {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border: 1px solid #40a835;
+  border-radius: 0.375rem;
+  overflow: hidden !important; 
+}
+
+
+.fondoVerde{
+  background-color: #40a835;
+  width: 100%;
+}
+
+.btnRegister{
+  background-color: #ffff ;
+  text-decoration: none;
+  border: 2px #ffff solid;
+  width: 200px !important;
+  color: #40a835;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.btnRegister:hover{
+  background-color: #c5ffbe ;
+  color: #23681c;
+  border: 2px #ffff solid;
+}
+
+
+.tahoma{
+  font-family: tahoma;
+  font-size: 1.3rem;
+}
+
+.tahomaTittle{
+  font-family: tahoma;
+  font-weight: bold;
+  color: #008000;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: white;
+  border: 2px green solid;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: green;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent green transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent green;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: white;
+  border: 2px green solid;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.timeline div{
+  border-radius: 0.375rem;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+
+
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+
+  .mapaDetails{
+    height: 50vh;
+    margin-bottom: 3% !important;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+
+
+
+  .busquedaRapida {
+    width: 90%;
+    height: 400px !important;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top:110%;
+    text-align: start;
+    background-color: #000; 
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+  }
+
+  .busquedaRapida form {
+    margin-left: 20%;
+    margin-top: -43%;
+    position: relative;
+  }
+
+  .busquedaRapida label{
+    color: #fff !important;
+  }
+  
+  .busquedaRapida h1 {
+    width: 10%;
+    margin-top: -1%;
+    font-size: 5vw;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .container h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 5vw;
+  }
+
+  .ver {
+    width: 20vw;
+    height: 7vw;
+  }
+  
+  .ver li {
+    width: 1vw;
+  }
+  
+  .ver a{
+    font-size: 1.5rem;
+  }
+  
+
+}
+
+
+.footer-section {
+  background: #008000;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #ffff;
+}
+.single-cta i {
+  color: #b6faaf;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #ffff;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #ffff;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ffffff;
+}
+.footer-widget ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #b6faaf;
+}
+.footer-widget ul li a {
+  color: #ffff;
+  text-transform: none;
+}
+.copyright-area{
+  background: #40a835;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffff;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #1c5216;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #ffff;
+}
+
+
+
+
+.lobby-container {
+  width: 100%;
+}
+
+.lobby-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lobby-form {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form-button {
+  cursor: pointer;
+  position: relative;
+  padding: 6px 24px;
+  font-size: 18px;
+  color: #000b76;
+  border: 2px solid #000b76;
+  border-radius: 12px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.form-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #000b76;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.form-button:hover::before {
+  scale: 3.3;
+}
+
+.form-button:hover {
+  color: white !important;
+  scale: 1.1;
+  box-shadow: 0 0px 20px #000b76;
+}
+
+.form-button:active {
+  scale: 1;
+}
+
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.cost-per-player {
+  background-color: #28a745; /* Color verde */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-button {
+  background-color: #dc3545; /* Color rojo de advertencia */
+  color: white; /* Texto en blanco para contrastar */
+  border: none; /* Sin borde */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre él */
+}
+
+.remove-button:hover {
+  background-color: #c82333; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+.add-button {
+  background-color: #28a745; /* Color verde para indicar agregar */
+  color: white; /* Texto en blanco para contrastar */
+  border: none; /* Sin borde */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre él */
+}
+
+.add-button:hover {
+  background-color: #218838; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+.error-message{
+  color: #dc3545;
+  font-weight: bold;
+}
+
+
+.team1-item,
+.team2-item {
+  transition: transform 0.5s ease; /* Define una transición para el cambio de posición */
+}
+
+.team1-item.moving,
+.team2-item.moving {
+  transform: translateX(200%); /* Establece la transformación para la animación */
+}
+
+.player-name {
+  transition: opacity 0.5s ease; /* Define una transición para la opacidad */
+}
+
+.player-name.hidden {
+  opacity: 0; /* Establece la opacidad a cero para ocultar el nombre */
+}
+
+
+.move-button {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 6px 12px; /* Espaciado interior reducido */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como elemento en línea */
+  font-size: 14px; /* Tamaño de la fuente reducido */
+  margin: 4px 2px; /* Margen exterior */
+  cursor: pointer; /* Cursor al pasar sobre el botón */
+  border-radius: 4px; /* Bordes redondeados */
+  transition-duration: 0.4s; /* Duración de la transición */
+}
+
+.move-button:hover {
+  background-color: #45a049; /* Cambio de color de fondo al pasar sobre el botón */
+  color: white; /* Cambio de color del texto al pasar sobre el botón */
+}
+
+.move-button:active {
+  background-color: #3e8e41; /* Cambio de color de fondo cuando se hace clic en el botón */
+  transform: translateY(1px); /* Efecto de desplazamiento hacia abajo cuando se hace clic */
+}
+
+
+.custom-image {
+  width: 150px; /* Tamaño deseado para la imagen */
+  height: 150px; /* Tamaño deseado para la imagen */
+  object-fit: cover; /* Cubrir el contenedor manteniendo la relación de aspecto */
+}
+
+
+.row {
+  margin-right: 0 !important; 
+
+}
+
+.truncate-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 1 ; /* Número de líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.page-item {
+  margin: 0 5px; /* Espacio entre cada página */
+}
+
+.page-link {
+  padding: 5px 10px;
+  border: 1px solid #008000 !important;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.page-link:focus {
+  outline: none;
+}
+
+.page-link.active {
+  background-color: #008000 !important;
+  color: #fff;
+  border-color: #008000 !important;
+}
+
+.page-link.active:hover {
+  background-color: #008000 !important;
+  border-color: #008000 !important;
+}
+
+.active>.page-link, .page-link.active {
+  z-index: 3;
+  color: var(--bs-pagination-active-color);
+  background-color: #008000 !important;
+  border-color: #008000 !important;
+}
+
+.scrollList {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  scrollbar-width: thin; /* Ancho del scrollbar fino */
+  scrollbar-color: #888 transparent; /* Color del scrollbar (pista del scrollbar transparente) */
+}
+
+/* Estilo del scrollbar en navegadores WebKit (Chrome, Safari, etc.) */
+.scrollList::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar fino */
+}
+
+.scrollList::-webkit-scrollbar-track {
+  background: transparent; /* Color de fondo de la pista del scrollbar */
+}
+
+.scrollList::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del thumb del scrollbar */
+  border-radius: 4px; /* Radio de borde del thumb */
+}
+
+
+.alturaMapa{
+  height: 100vh;
+  
+}
+
+.deleteButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  gap: 2px;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.deleteButton:hover {
+  transition-duration: 0.3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+  gap: 0;
+}
+
+.bin-top {
+  transform-origin: bottom right;
+}
+.deleteButton:hover .bin-top {
+  transition-duration: 0.5s;
+  transform: rotate(160deg);
+}

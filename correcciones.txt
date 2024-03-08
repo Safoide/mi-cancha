@@ -1,0 +1,16 @@
+fecha y hora de envio de los mensajes -
+fondo del input color blanco en pagina de soporte -
+minimo de ancho en caracteres 40 -
+trabajar con 2 columnas los iconos de pregunta frecuente (animacion crossfade. fade in fade out, slade) -
+aplicar algo para resaltar los pins de ubicacion o quitar los otros q ya existen -
+corregir los margenes de las pantalas register/login -
+cambiar el click aqui por un registrate -
+Nombre solo, no nombre completo y aclarar el porque lo pedimos o evitar pedirlo en el registro y hacerlo en el momento del soporte, el deporte favorito colocarlo una vez el usuario ya fue registrado-
+colocar el ojito para ocultar o ver la contraseña -
+colocar las imagenes tambien al momento del alta, no solo en el edit -
+subcoleccion de horarios con los horarios desde, hasta y fraccion En espera
+agregar la hora en las reservadas del listado/historial -
+cargar en el apartado de perfil los datos ya existentes
+
+a futuro:
+opcion para que propio el admin pueda alquilar un horario en su predio teniendo en cuenta q capaz le reservan desde un mensaje o llamda

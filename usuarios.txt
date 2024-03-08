@@ -1,0 +1,14 @@
+normal
+
+usuario@gmail.com
+secreto
+
+cancha
+
+cancha@gmail.com
+secreto
+
+admin
+
+admin@gmail.com
+secreto
